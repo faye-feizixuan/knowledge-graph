@@ -124,6 +124,9 @@
                 <button id="resetView" class="px-3 py-1 bg-primary text-white rounded hover:bg-primary/90 transition-all-300 flex items-center">
                     <i class="fa fa-refresh mr-1"></i> 重置视图
                 </button>
+                <button id="clearAllData" class="px-3 py-1 bg-red-600 text-white rounded hover:bg-red-700 transition-all-300 flex items-center">
+                    <i class="fa fa-trash mr-1"></i> 一键清空
+                </button>
                 <button id="exportGraph" class="px-3 py-1 bg-gray-700 text-white rounded hover:bg-gray-600 transition-all-300 flex items-center">
                     <i class="fa fa-download mr-1"></i> 导出图谱
                 </button>
@@ -267,6 +270,9 @@
             
             // 清空数据按钮
             document.getElementById('clearData').addEventListener('click', clearData);
+            
+            // 一键清空按钮
+            document.getElementById('clearAllData').addEventListener('click', clearData);
             
             // 示例数据按钮
             document.getElementById('sampleData').addEventListener('click', loadSampleData);
